@@ -23,7 +23,7 @@ class Lotto:
                 self.lotto.append(num)
 
             # 여섯개를 뽑았으면 반복 종료
-            if (self.lotto.__len__() == 6):
+            if (len(self.lotto) == 6):
                 bonus = random.randint(1, 45)
                 break
 
