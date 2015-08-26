@@ -24,7 +24,6 @@ class Lotto:
 
             # 여섯개를 뽑았으면 반복 종료
             if (len(self.lotto) == 6):
-                bonus = random.randint(1, 45)
                 break
 
     def pickBonus(self):
