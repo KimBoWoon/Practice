@@ -1,7 +1,5 @@
 __author__ = 'user'
 
-__author__ = 'user'
-
 import tkinter as tk
 import tkinter.ttk as ttk
 
