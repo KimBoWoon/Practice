@@ -49,8 +49,9 @@ class Lotto:
         print('뽀나스 번호는!!')
         print(self.bonus)
 
-lotto = Lotto()
+if __name__ == "__main__":
+    lotto = Lotto()
 
-lotto.randomPick()
-lotto.pickBonus()
-lotto.printLotto()
+    lotto.randomPick()
+    lotto.pickBonus()
+    lotto.printLotto()
