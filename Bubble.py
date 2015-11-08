@@ -1,6 +1,6 @@
 __author__ = '보운'
 
-sortList = input().split()
+# sortList = input().split()
 sortList = [99, 81, 700, 6, 5005, 444, 321, 23456, 1]
 size = len(sortList)
 for i in range(size):

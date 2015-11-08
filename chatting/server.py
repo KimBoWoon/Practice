@@ -5,6 +5,7 @@ from socketserver import ThreadingTCPServer, StreamRequestHandler
 PORT = 2000
 IP = '127.0.0.1'
 
+
 class MyRequestHandler(StreamRequestHandler):
     def handle(self):
         # 채팅 이용자 체크
@@ -21,7 +22,7 @@ class MyRequestHandler(StreamRequestHandler):
             if not buf:
                 pass
             # 퇴장
-            elif (buf.decode('utf-8') == 'EXIT'):
+            elif buf.decode('utf-8') == 'EXIT':
                 print(name.decode('utf-8') + '님이 퇴장하셨습니다!')
                 cnt -= 1
                 # 카운트가 0이면 채팅 이용자가 없으므로 서버 종료
@@ -34,6 +35,7 @@ class MyRequestHandler(StreamRequestHandler):
             else:
                 # 사용자들이 입력한 문자열을 UTF-8로 인코딩하여 출력
                 print(name.decode('utf-8') + ' : ' + buf.decode('utf-8'))
+
 
 server = ThreadingTCPServer((IP, PORT), MyRequestHandler)
 print('listening on port', PORT)
