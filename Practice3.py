@@ -15,19 +15,19 @@ __author__ = '보운'
 #             print('+', end='')
 #     print()
 
-for i in range(int(input())):
-    x = int(input())
-    n = x
-    for i in range(x):
-        if (i < x / 2):
-            n -= 1
-        else:
-            n += 1
-        for k in range(x):
-            if (k < n):
-                print(' ', end='')
-            elif (k == n or k == x - 1):
-                print('*', end='')
-            else:
-                print('+', end='')
-        print()
+# for i in range(int(input())):
+#     x = int(input())
+#     n = x
+#     for i in range(x):
+#         if (i < x / 2):
+#             n -= 1
+#         else:
+#             n += 1
+#         for k in range(x):
+#             if (k < n):
+#                 print(' ', end='')
+#             elif k == n or k == x - 1:
+#                 print('*', end='')
+#             else:
+#                 print('+', end='')
+#         print()

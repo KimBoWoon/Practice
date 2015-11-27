@@ -90,17 +90,17 @@ def rightAndUp(boards, x, y, stone):
 
 
 def stoneCount(boards):
-    block = white = 0
+    black = white = 0
 
     for x in range(8):
-        block += boards[x].count('X')
+        black += boards[x].count('X')
         white += boards[x].count('O')
 
-    return block, white
+    return black, white
 
 
-def printBoards(boards, block, white):
-    print(block, white)
+def printBoards(boards, black, white):
+    print(black, white)
     for row in range(0, 8):
         for col in range(0, 8):
             print(boards[row][col], end='')
@@ -157,6 +157,6 @@ for t in range(int(input())):
 
             board[x][y] = 'O'
 
-    block, white = stoneCount(board)
+    black, white = stoneCount(board)
 
-    printBoards(board, block, white)
+    printBoards(board, black, white)
