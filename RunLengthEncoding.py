@@ -31,10 +31,10 @@ for t in range(int(input())):
     elif flag == 1:
         chrSize = ''
 
-        for i in range(size - 1):
-            if data[i] == '0':
+        for i in range(size):
+            if data[i] == '0' and len(chrSize) == 0:
                 chrSize = '256'
-            elif '1' <= data[i] <= '9':
+            elif '0' <= data[i] <= '9':
                 chrSize += data[i]
             else:
                 result += data[i] * int(chrSize)
