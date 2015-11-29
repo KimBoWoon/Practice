@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - student.db" uuid="a36c289c-e869-4c6c-9c7c-852fb4e85a2c">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="student" schema="" catalog="" type="TABLE">
+      <column name="sno" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="sname" sqlType="VARCHAR(4)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="hp" sqlType="VARCHAR(13)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="sno),unique (sno"/>
+    </table>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - course.db" uuid="b5462441-dcc9-44c6-8999-4288457479b0">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="course" schema="" catalog="" type="TABLE">
+      <column name="cno" sqlType="VARCHAR(4)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="pro" sqlType="VARCHAR(4)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="cno),unique (cno"/>
+    </table>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - enrol.db" uuid="b8bbf519-2655-4044-9eb9-92ccb2d21dc3">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="enrol" schema="" catalog="" type="TABLE">
+      <column name="sno" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="cno" sqlType="VARCHAR(4)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="grade" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <primary-key columns="cno"/>
+    </table>
+  </data-source>
+</component>
