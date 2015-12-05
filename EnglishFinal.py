@@ -3,7 +3,7 @@ __author__ = '보운'
 import random
 
 english = [
-    "I'll Guard it with my life".upper(),
+    "I'll guard it with my life".upper(),
     "Please you must be in desperate need of hard liquor".upper(),
     "Did you mention my good looks and my killer charm".upper(),
     "Why don't you send it over".upper(),
@@ -66,7 +66,8 @@ r = random.Random()
 cnt = 1
 
 while True:
-    rNum = r.randint(0, len(korean) - 1)
+    # rNum = r.randint(0, len(korean) - 1)
+    rNum = r.randint(0, 7)
     print(cnt)
     print(korean[rNum])
 
@@ -76,6 +77,6 @@ while True:
         print('정답')
     else:
         print('오답')
-        print(english[rNum].title())
+        print(english[rNum].capitalize())
 
     cnt += 1

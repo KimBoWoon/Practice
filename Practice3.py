@@ -14,18 +14,19 @@ __author__ = 'BW'
 #             print('+', end='')
 #     print()
 
-# for i in range(int(input())):
-#     x = int(input())
-#     n = x
-#     for i in range(x):
-#         if (i < x / 2):
+# T = int(input())
+# for t in range(T):
+#     size = int(input())
+#     n = size
+#     for i in range(size):
+#         if i < size / 2:
 #             n -= 1
 #         else:
 #             n += 1
-#         for k in range(x):
-#             if (k < n):
+#         for j in range(size):
+#             if j < n:
 #                 print(' ', end='')
-#             elif (k == n or k == x - 1):
+#             elif j == 0 or j == n - 1:
 #                 print('*', end='')
 #             else:
 #                 print('+', end='')
@@ -63,13 +64,3 @@ __author__ = 'BW'
 #     else:
 #         print(0)
 
-import mp3play
-
-filename = r'C:\Users\Public\Music\Sample Music\Kalimba.mp3'
-clip = mp3play.load(filename)
-
-clip.play()
-
-import time
-time.sleep(min(30, clip.seconds()))
-clip.stop()
