@@ -6,21 +6,18 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/student.db</jdbc-url>
-      <libraries />
     </data-source>
     <data-source source="LOCAL" name="Sqlite (Xerial) - course.db" uuid="b5462441-dcc9-44c6-8999-4288457479b0">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/course.db</jdbc-url>
-      <libraries />
     </data-source>
     <data-source source="LOCAL" name="Sqlite (Xerial) - enrol.db" uuid="b8bbf519-2655-4044-9eb9-92ccb2d21dc3">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/enrol.db</jdbc-url>
-      <libraries />
     </data-source>
   </component>
 </project>
