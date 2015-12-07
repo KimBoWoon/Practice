@@ -1,7 +1,19 @@
 __author__ = '보운'
 
-s = {'길음역': ['국민대학교', '국민'], '서울대역': ['서울대학교', '서울'], '광운대역': ['광운대학교', '광운']}
-
-while True:
-    c = input()
-    print(s[c][0], s[c][1])
+T = int(input())
+for t in range(T):
+    size = int(input())
+    n = size
+    for i in range(size):
+        if i < size / 2:
+            n -= 1
+        else:
+            n += 1
+        for j in range(size):
+            if j < n:
+                print(' ', end='')
+            elif j == 0 or j == n - 1:
+                print('*', end='')
+            else:
+                print('+', end='')
+        print()
