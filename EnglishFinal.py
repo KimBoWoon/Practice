@@ -44,7 +44,7 @@ english = [
     "It just happened".upper(),
     "Your're gonna give me a hard time too".upper(),
     "Your've made that clear".upper(),
-    "I wouldn't care if you were out there pole-dancing".upper(),
+    "I wouldn't care if you were out there pole-dancing all night".upper(),
     "You used to say this was just a job".upper(),
     "You used to make fun of the runway girls".upper(),
     "Now you've become one of them".upper(),
@@ -59,7 +59,14 @@ english = [
     "You're very fetching so go fetch".upper(),
     "The point is...".upper(),
     "Don't be ridiculous".upper(),
-    "Why would we do that".upper()
+    "Why would we do that".upper(),
+    "Who put that together for you".upper(),
+    "It's just something i threw on".upper(),
+    "I think that my work here is done".upper(),
+    "She put me up for it".upper(),
+    "I am going to be able to call the shots in my own life".upper(),
+    "Just admit it to me".upper(),
+    "Your're defending her?".upper()
 ]
 korean = [
     '목숨걸고 지킨다.',
@@ -118,14 +125,20 @@ korean = [
     '너는 매우 매력적이니까 가서 데려와',
     '중요한 것은...',
     '바보같이 굴지마',
-    '왜 우리가 그래'
+    '왜 우리가 그래',
+    '누가 맞춰줬니',
+    '그냥 내가 막 걸처입은거에요',
+    '난 이제 내 일이 끝난거 같군',
+    '그녀가 그자리에 나를 추천했어',
+    '내 삶에서 내가 명령 할수있게 될거야',
+    '그냥 나한테 그걸 인정해',
+    '너 그녀를 변호하는거니?'
 ]
 r = random.Random()
 cnt = 1
 
 while True:
-    # rNum = r.randint(0, len(korean) - 1)
-    rNum = r.randint(0, 7)
+    rNum = r.randint(0, len(korean) - 1)
     print(cnt)
     print(korean[rNum])
 
@@ -183,3 +196,6 @@ while True:
 # '결정은 네 몫이야',
 # '에밀리 죽을꺼에요 파리에 얼마나 가고싶어 했는데 몇주나 굶었어요',
 # '지금도 해야할일이 태산인데'
+
+"No, Miranda, I... Emilu would die. Her whole life is about Paris. She hasn't eaten in weeks, I... I can't do that, Miranda, I can't."
+"If you don't go, i'll assume you're not serious about your future. At Runway or any other publication. The decision's yours."

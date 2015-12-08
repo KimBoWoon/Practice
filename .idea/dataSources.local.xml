@@ -3,12 +3,15 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Sqlite (Xerial) - student.db" uuid="a36c289c-e869-4c6c-9c7c-852fb4e85a2c">
       <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
     </data-source>
     <data-source name="Sqlite (Xerial) - course.db" uuid="b5462441-dcc9-44c6-8999-4288457479b0">
       <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
     </data-source>
     <data-source name="Sqlite (Xerial) - enrol.db" uuid="b8bbf519-2655-4044-9eb9-92ccb2d21dc3">
       <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
     </data-source>
   </component>
 </project>
