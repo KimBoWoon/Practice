@@ -1,5 +1,3 @@
-__author__ = '보운'
-
 import random
 
 english = [
@@ -197,5 +195,26 @@ while True:
 # '에밀리 죽을꺼에요 파리에 얼마나 가고싶어 했는데 몇주나 굶었어요',
 # '지금도 해야할일이 태산인데'
 
-"No, Miranda, I... Emilu would die. Her whole life is about Paris. She hasn't eaten in weeks, I... I can't do that, Miranda, I can't."
-"If you don't go, i'll assume you're not serious about your future. At Runway or any other publication. The decision's yours."
+# 필수
+'''앤디 : 'No, Miranda, I... Emily would die.
+Her whole life is about Paris. She hasn't eaten in weeks,
+I... I can't do that, Miranda, I can't.'''
+'''미란다 : 'If you don't go,
+i'll assume you're not serious about your future.
+At Runway or any other publication. The decision's yours.'''
+
+# 선택
+'''Andy, I make port wine reductions all day.
+I'm not exactly in the Peace Corps.
+You know, I wouldn't care if you were out there pole dancing all night...
+as long as you did it with a little integrity.
+You used to say this was just a job.
+You used to make fun of the Runway girls.
+What happened? Now you've become one of them.'''
+
+'''Yeah. And she's bringing me into run all the editorial content.
+You're really surprised?
+Jacqueline's a lot younger than Miranda. She has a fresher take on things.
+Not to mention American Runway's one of the most expensive books in the business.
+Jacqueline does the same thing for a lot less money.
+And Irv-Irv's a businessman, you know.'''
